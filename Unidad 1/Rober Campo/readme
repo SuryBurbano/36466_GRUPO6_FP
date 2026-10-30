@@ -1,1 +1,17 @@
+Problema 1.1. Media de dos valores
+#include <stdio.h>
+
+int main() {
+    double a, b, media;
+
+    printf("Ingrese a: ");
+    scanf("%lf", &a);
+    printf("Ingrese b: ");
+    scanf("%lf", &b);
+
+    media = (a + b) / 2;
+
+    printf("La media de %g y %g es %g\n", a, b, media);
+    return 0;
+}
 
