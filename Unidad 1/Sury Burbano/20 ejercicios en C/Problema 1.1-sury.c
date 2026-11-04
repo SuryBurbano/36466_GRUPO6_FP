@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+//Problema 1.1. Media de dos valores
+//Desarrolla un programa que ingrese dos números por teclado e imprima su media
 int main() {
     float num1, num2, media;
 
