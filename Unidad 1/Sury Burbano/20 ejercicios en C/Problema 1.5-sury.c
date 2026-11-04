@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+//Problema 1.5. Conversión de unidades de tiempo
+//Desarrolla un programa que lea por teclado un valor entero c, interpretándolo como el número de
+//segundos que dura un evento, y calcule y muestre por pantalla cuántos días, horas, minutos y
+//segundos representa.
 int main() {
     int s, dias, horas, minutos, segundos;
 
