@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+//Problema 1.12. Suma de dígitos
+//Desarrolla un programa que lea un entero positivo y calcule la suma de sus dígitos.
 int main() {
     int n, digito, suma = 0;
 
