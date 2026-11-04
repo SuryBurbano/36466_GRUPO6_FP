@@ -1,7 +1,10 @@
+Media de dos valores
+Desarrollar un programa que ingrese dos numeros por teclado e imprimir su media.
+
 #include <stdio.h>
 
 int main() {
-    float num1, num2, media;
+    float num1, num2, media; Declaracion de variables reales para los numeros y resultados
 
     printf("Ingrese el primer numero: ");
     scanf("%f", &num1);
