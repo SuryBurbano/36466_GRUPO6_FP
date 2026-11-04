@@ -1,4 +1,7 @@
 #include <stdio.h>
+//Problema 1.8. Número primo
+//Desarrolla un programa que ingrese por teclado un número entero mayor que 1 y determine si es
+//primo o no
 
 int main() {
     int n, divisor = 2, primo = 1;
