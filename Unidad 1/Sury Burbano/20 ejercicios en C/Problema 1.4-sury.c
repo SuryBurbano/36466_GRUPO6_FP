@@ -1,4 +1,7 @@
 #include <stdio.h>
+//Problema 1.4. Intervalo
+//Desarrolla un programa que lea un número por teclado y determine si pertenece al intervalo [0, 10],
+//indicando el resultado por pantalla.
 
 int main() {
     float x;
