@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+//Problema 1.3. Divisible
+//Desarrolla un programa que lea dos números enteros por teclado y determine si el primero es
+//divisible por el segundo. Se mostrará por pantalla el resultado.
 int main() {
     int a, b;
 
