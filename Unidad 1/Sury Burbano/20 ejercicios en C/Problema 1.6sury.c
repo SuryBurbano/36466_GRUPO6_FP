@@ -1,4 +1,8 @@
 #include <stdio.h>
+//Problema 1.6. Máximo, mínimo y media de alturas
+//Desarrolla un programa que lea por teclado un número indeterminado de alturas y deje de leer
+//cuando se introduzca una negativa. El programa debe calcular e imprimir la media, el máximo y el
+//mínimo de las alturas introducidas
 
 int main() {
     float altura, suma = 0;
