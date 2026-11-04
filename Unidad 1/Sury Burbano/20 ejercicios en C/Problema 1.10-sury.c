@@ -1,4 +1,7 @@
 #include <stdio.h>
+//Problema 1.10. Factorial
+//Desarrolla un programa que lea un número entero n ≥ 0 y calcule n! = 1 · 2 · … · n, sabiendo que 0! =
+//1
 
 int main() {
     int n, i;
