@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+//Problema 1.9. Números primos comprendidos entre dos números dados
+//Desarrolla un programa que muestre por pantalla todos los números primos comprendidos entre dos
+//números enteros introducidos por teclado.
 int main() {
     int a, b, aux;
     int n, divisor, primo;
