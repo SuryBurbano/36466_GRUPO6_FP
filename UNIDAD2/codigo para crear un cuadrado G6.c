@@ -1,19 +1,26 @@
-//realizar un codigo para que se forme un cuadrado, grupo 6
-
+// Codigo para crear un cuadrado
 #include <stdio.h>
+int main()
+{
+    /*
+        * * * *
+        * * * *
+        * * * *
+        * * * *
+    */
+    int i, j, n;
 
-int main() {
-    int n;
+    do
+    {
+        printf("Tama√±o del cuadrado: ");
+        scanf("%d", &n);
+    } while(n <= 0);
 
-    printf("Ingrese el tamaÒo del cuadrado: ");
-    scanf("%d", &n);
-
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            if (i == 0 || i == n - 1 || j == 0 || j == n - 1)
-                printf("* ");
-            else
-                printf("  ");
+    for(i = 1; i <= n; i++) // filas
+    {
+        for(j = 1; j <= n; j++) // columnas
+        {
+            printf("* ");
         }
         printf("\n");
     }
