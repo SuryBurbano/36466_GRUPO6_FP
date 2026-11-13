@@ -1,3 +1,5 @@
+//presentar un menú pequeño de 3 opciones, elaborado por César Guacho
+
 #include <stdio.h>
 #include <windows.h>
 
