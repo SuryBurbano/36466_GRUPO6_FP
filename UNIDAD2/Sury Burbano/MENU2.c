@@ -2,7 +2,7 @@
 
 int main() {
     int opcion, cantidad;
-
+  // Este ciclo repite todo el menu hasta que el usuario elija la opcion 3
     do {
         printf("\n===============================\n");
         printf("        MENU PRINCIPAL         \n");
@@ -12,11 +12,11 @@ int main() {
         printf("3. Salir\n");
         printf("===============================\n");
         printf("Elige una opcion: ");
-        scanf("%d", &opcion);
+        scanf("%d", &opcion); // Guardamos el numero elegido
 
         printf("\n");
 
-        switch (opcion) {
+        switch (opcion) {       // Evaluamos que numero eligio el usuario
             case 1:
                 // Validar que no se ingresen numeros negativos ni cero
                 do {
@@ -28,8 +28,8 @@ int main() {
                 } while (cantidad <= 0);
 
                 printf("\n--- FIGURA (Cuadrado de %dx%d) ---\n", cantidad, cantidad);
-                for (int i = 1; i <= cantidad; i++) {
-                    for (int j = 1; j <= cantidad; j++) {
+                for (int i = 1; i <= cantidad; i++) {  // Controla las filas (hacia abajo)
+                    for (int j = 1; j <= cantidad; j++) { // Controla las columnas (hacia el lado)
                         printf("* ");
                     }
                     printf("\n");
@@ -45,7 +45,9 @@ int main() {
                         printf("Error: No se permiten numeros negativos ni cero. Intenta de nuevo.\n");
                     }
                 } while (cantidad <= 0);
-
+                
+              // Imprimimos la serie multiplicando cada vuelta por 2 para sacar los pares
+                
                 printf("\n--- SERIE NUMERICA (%d numeros pares) ---\n", cantidad);
                 for (int i = 1; i <= cantidad; i++) {
                     printf("%d ", i * 2);
@@ -54,15 +56,15 @@ int main() {
                 break;
 
             case 3:
-                printf("Gracias por usar el programa. ¡Hasta pronto!\n");
+                printf("Gracias por usar el programa. Â¡Hasta pronto!\n");
                 break;
 
             default:
-                printf("Opcion no valida. Por favor, intenta de nuevo.\n");
+                printf("Opcion no valida. Por favor, intenta de nuevo.\n");  // Mensaje de aviso si el usuario escribe un numero distinto a 1, 2 o 3
                 break;
         }
 
-    } while (opcion != 3);
+    } while (opcion != 3); // Condicion para seguir repitiendo el menu
 
     return 0;
 }
