@@ -1,0 +1,86 @@
+#include <stdio.h>
+#include <windows.h>
+// Funcion que calcule una base elevada al exponente
+long potencia(int base, int exp)
+{
+ long res = 1;
+ int k;
+ for (k = 1; k <= exp; k++)
+ res = res * base;
+ return res;
+}
+// Opcion 1: Grafico Cuadrado hueco
+void cuadradoHueco()
+{
+ int lado, i, j;
+ printf("Ingrese el tamano de la figura: ");
+ scanf("%d", &lado);
+ printf("\n");
+ // Controla las filas y columnas del cuadrado
+ for (i = 1; i <= lado; i++) {
+ for (j = 1; j <= lado; j++)
+ {
+ // Identifica los bordes de la figura
+ if (i == 1 || i == lado || j == 1 || j == lado)
+ printf("* ");
+ else
+ printf(" ");
+ }
+ printf("\n");
+ }
+}
+// Opcion 2: Serie de numeros elevados al exponente y su suma
+void serieExponente()
+{
+ int n, exp, i;
+ long suma = 0, termino;
+ printf("Cantidad de terminos (n): ");
+ scanf("%d", &n);
+ printf("Exponente: ");
+ scanf("%d", &exp);
+ printf("\n");
+ // Genera los terminos y acumula sus resultados
+ for (i = 1; i <= n; i++)
+ {
+ termino = potencia(i, exp);
+ suma = suma + termino; printf("%d^%d = %ld\n", i, exp, termino);
+ }
+ printf("\nLa suma es: %ld\n", suma);
+}
+int main()
+{
+ int op;
+ // Repite el menu hasta seleccionar la opcion 3
+ do
+ {
+ printf("MENU\n");
+ printf("1. Cuadrado hueco\n");
+ printf("2. Serie con exponente y suma\n");
+ printf("3. Salir\n");
+ printf("Ingresar opcion: ");
+ scanf("%d", &op);
+ printf("\n");
+ // Ejecuta la funcion segun la opcion seleccionada
+ switch (op)
+ {
+ case 1:
+ cuadradoHueco();
+ break;
+ case 2:
+ serieExponente();
+ break; case 3:
+ printf("Gracias por usar este bello programa. Hasta luego!\n");
+ break;
+ default:
+ printf("Opcion invalida\n");
+ }
+ // Pausa y limpia la pantalla si no se desea salir
+ if (op != 3)
+ {
+ printf("\n");
+ system("pause");
+ system("cls");
+ }
+ } while (op != 3);
+ return 0;
+}
